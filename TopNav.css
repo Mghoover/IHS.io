@@ -1,0 +1,58 @@
+#body {
+	display: flex;
+	flex-direction: column;
+}
+
+#navbar {
+	overflow: hidden;
+	width: 99vw;
+	background-color: rgb(96, 2, 109);
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+#navbar a {
+	float: left;
+	color: black;
+	background-color: rgb(96, 2, 109);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	color: white;
+}
+
+#navbar a:hover {
+	background-color: rgb(2, 85, 2);
+	color: white;
+}
+
+#navbar a.active {
+	background-color: black;
+	color: white;
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	height: 60vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
+
+.sticky + .content {
+	padding-top: 60px;
+}
+
+#pagehead {
+	top:0;
+	position: fixed;
+}
