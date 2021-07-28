@@ -66,7 +66,7 @@
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 35px;
 	margin: 4px 2px;
 	cursor: pointer;
 	border-radius: 12px;
@@ -125,4 +125,19 @@ grid-template-rows: auto 1fr 25px;
 	.treatgriditem {
 		padding: 20px;
 	}
-	
+
+.subgridTESTIMONIAL {
+	height: 100vh;
+	display: grid;
+	grid-template-areas:
+		'info video';
+		grid-gap: 10px;
+		padding: 10px;
+}
+	.testgridinfo {
+		grid-area: info;
+		max-width: 1000px;
+	}
+	.testgridvideo {
+		grid-area: video;
+	}
